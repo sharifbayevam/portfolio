@@ -115,3 +115,153 @@ box-shadow:0px 4px 15px rgba(20, 11, 11, 0.8);
     animation: gradientBG 10s ease infinite;
     padding: 80px 20px;
 }
+
+/* ==========================================
+   PREMIUM PROJECTS SECTION STILLARI
+   ========================================== */
+
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.projects-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Sarlavha qismi */
+.projects-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-header h2 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+/* Loyihalar joylashuvi (3 talik Grid) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Har bir loyiha kartasi (Glassmorphism) */
+.project-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s;
+}
+
+/* Karta ustiga sichqoncha borganda (Hover) */
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(16, 185, 129, 0.4); /* Neon yashil chegara */
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.08);
+}
+
+.project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 12px;
+    transition: color 0.3s;
+}
+
+.project-card:hover .project-title {
+    color: #10b981; /* Hoverda sarlavha yashil bo'ladi */
+}
+
+.project-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+/* Teglar qismi */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag-item {
+    background: rgba(16, 185, 129, 0.08);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* View Project Tugmasi */
+.btn-project-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--card-right-bg);
+    color: var(--text-main);
+    border: 1px solid var(--card-border);
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-project-view svg {
+    transition: transform 0.3s ease;
+}
+
+/* Tugma hover bo'lganda */
+.project-card:hover .btn-project-view {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 8px 16px rgba(16, 185, 129, 0.2);
+}
+
+.project-card:hover .btn-project-view svg {
+    transform: translate(2px, -2px); /* Strela tepaga va o'ngga buriladi */
+}
+
+/* Ekran o'lchamiga qarab moslashish (Responsive) */
+@media (max-width: 960px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Planshetda 2 talik qator */
+    }
+}
+
+@media (max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Mobil telefonda 1 talik qator */
+    }
+    .project-card {
+        padding: 24px;
+    }
+}

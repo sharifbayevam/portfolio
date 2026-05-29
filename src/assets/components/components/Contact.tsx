@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import type { FormEvent } from 'react'; 
 import emailjs from '@emailjs/browser';
+import './Contact.css';
 
 interface FormDataState {
   name: string;

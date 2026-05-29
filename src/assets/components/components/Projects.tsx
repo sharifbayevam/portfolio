@@ -1,4 +1,5 @@
 import React from 'react';
+import './Projects.css';
 
 interface ProjectItem {
   title: string;
@@ -13,6 +14,12 @@ const Projects: React.FC = () => {
       title: "Donor-uz",
       description: "Donor-uz is a comprehensive blood donation platform that connects donors with recipients in need. The platform allows users to register as donors, search for available blood types, and schedule donations.",
       tags: ["React", "Node.js", "TypeScript", "Tailwind CSS"],
+      link: "#"
+    },
+    {
+      title: "edu-test-platformasi",
+      description: "edu-test-platformasi is an online testing platform for educational institutions. It allows teachers to create and manage tests, and students to take tests and view their results.",
+      tags: ["React", "Node.js", "TypeScript", "MongoDB"],
       link: "#"
     },
     {

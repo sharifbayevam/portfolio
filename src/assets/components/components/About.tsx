@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 const About = () => {
   // Texnologiyalaringiz ro'yxati (xohlasangiz ko'paytirishingiz mumkin)
