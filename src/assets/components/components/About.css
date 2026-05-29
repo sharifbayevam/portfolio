@@ -1,0 +1,11 @@
+/* body ni butunlay o'chiring */
+
+.about-section {
+    min-height: 100vh; /* Sahifa ekranni to'liq egallashi uchun */
+    background-color: #1a1a2e; /* About uchun to'q rang yoki o'zingizga yoqqan rang */
+    color: white;
+    padding: 80px 20px;
+    max-width: 100%; /* max-width: 1200px ni 100% qilsangiz fon butun ekranni qoplaydi */
+    margin: 0;
+    text-align: center;
+}

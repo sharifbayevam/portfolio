@@ -1,0 +1,117 @@
+
+.sect {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sect h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    position: relative;
+}
+
+.sect h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.sect > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sect > div > div {
+    background: #85878b;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+border: none;
+box-shadow:0px 4px 15px rgba(20, 11, 11, 0.8);
+}
+
+.sect > div > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sect h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.sect p {
+    color: #433d3d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.sect div div div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sect span {
+    background: #96a3cd;
+    color: #4f46e5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #e0e7ff;
+}
+
+.sect a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sect a:hover {
+    background-color: #0d57a0;
+}
+
+@media (max-width: 600px) {
+    .sect h2 {
+        font-size: 2rem;
+    }
+    
+    .sect > div {
+        grid-template-columns: 1fr;
+    }
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.sect {
+    background: linear-gradient(-45deg, #f41b1b, #fcb9b5, #5ced99, #8760e1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    padding: 80px 20px;
+}
