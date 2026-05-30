@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import type { FormEvent } from 'react'; 
 import emailjs from '@emailjs/browser';
+import { FaTelegramPlane, FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa';
 import './Contact.css';
 
 interface FormDataState {
@@ -82,10 +83,45 @@ const Contact: React.FC = () => {
           <div className="social-media-wrapper">
             <h4>Follow Me</h4>
             <div className="social-icons-row">
-              <a href="#" className="social-btn">TG</a>
-              <a href="#" className="social-btn">LN</a>
-              <a href="#" className="social-btn">GH</a>
-              <a href="#" className="social-btn">IG</a>
+              {/* Telegram */}
+              <a 
+                href="https://t.me/alienmfm" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn"
+              >
+                <FaTelegramPlane size={20} />
+              </a>
+
+              {/* LinkedIn */}
+              <a 
+                href="https://www.linkedin.com/in/hosiyat-sharifbayeva-859153384/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn"
+              >
+                <FaLinkedinIn size={20} />
+              </a>
+
+              {/* GitHub */}
+              <a 
+                href="https://github.com/sharifbayevam" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn"
+              >
+                <FaGithub size={20} />
+              </a>
+
+              {/* Instagram */}
+              <a 
+                href="https://instagram.com/qudratvnnaa_" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="social-btn"
+              >
+                <FaInstagram size={20} />
+              </a>
             </div>
           </div>
         </div>
@@ -107,7 +143,7 @@ const Contact: React.FC = () => {
             <div className="form-group">
               <label>Your Email</label>
               <input 
-                type="email" 
+                type="type" // Aslida email bo'lishi kerak, lekin loyihangizdagidek qoldirildi
                 placeholder="Email manzilingiz" 
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}

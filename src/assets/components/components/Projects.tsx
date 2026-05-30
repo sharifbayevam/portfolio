@@ -14,13 +14,13 @@ const Projects: React.FC = () => {
       title: "Donor-uz",
       description: "Donor-uz is a comprehensive blood donation platform that connects donors with recipients in need. The platform allows users to register as donors, search for available blood types, and schedule donations.",
       tags: ["React", "Node.js", "TypeScript", "Tailwind CSS"],
-      link: "#"
+      link: "https://donor-connect-main-git-main-sharifbayevams-projects.vercel.app/"
     },
     {
       title: "edu-test-platformasi",
       description: "edu-test-platformasi is an online testing platform for educational institutions. It allows teachers to create and manage tests, and students to take tests and view their results.",
       tags: ["React", "Node.js", "TypeScript", "MongoDB"],
-      link: "#"
+      link: "https://edu-test-platforma"
     },
     {
       title: "ValyutaCourse",
@@ -32,7 +32,13 @@ const Projects: React.FC = () => {
       title: "Fresha1r App",
       description: "fresha1r is a simple weather application that provides users with real-time weather information for their location. It features a clean and intuitive interface, allowing users to easily access forecasts.",
       tags: ["React", "TypeScript", "Framer Motion"],
-      link: "#"
+      link: "https://fresha1rapp.netlify.app/"
+    },
+    {
+      title: " Magic Flower Shop",
+      description: "Magic Flower Shop is an online platform for purchasing and selling flowers. It allows users to browse different flower varieties, place orders, and track their deliveries.",
+      tags: ["React", "Node.js", "TypeScript", "PostgreSQL"],
+      link: "https://cute-paprenjak-dade10.netlify.app/"
     }
   ];
 
